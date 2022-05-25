@@ -6,4 +6,4 @@ services:
         container_name: baidu_report
         restart: always
         ports:
-            - "8000:8080"
+            - "8000:8000"
