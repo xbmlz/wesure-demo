@@ -29,3 +29,8 @@ app.include_router(api_router, prefix=settings.API_V1_STR)
 @app.get("/", response_class=HTTPResponse)
 async def welcome(request: Request):
     return templates.TemplateResponse("welcome.html", {"request": request})
+
+
+@app.get("/common", response_class=HTTPResponse)
+async def ocr(request: Request):
+    return templates.TemplateResponse("ocr.html", {"request": request})
