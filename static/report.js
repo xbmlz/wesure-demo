@@ -26,7 +26,7 @@ layui.use(["upload", "element", "layer"], function () {
             shade: [0.1, '#fff']
         });
         $.ajax({
-            url: "/api/v1/ocr/",
+            url: "/api/v1/report/",
             type: "POST",
             dataType: "json",
             contentType: "application/json",
