@@ -24,7 +24,7 @@ def yd(disease: str) -> str:
     gaishu = get_disease_info(disease['id'], disease['name'], 'gaishu')
     zhengzhuang = get_disease_info(disease['id'], disease['name'], 'zhengzhuang')
     bingyin = get_disease_info(disease['id'], disease['name'], 'bingyin')
-    zhiliao = get_disease_info(disease['id'], disease['name'], 'bingyin')
+    zhiliao = get_disease_info(disease['id'], disease['name'], 'zhiliao')
     jiuyi = get_disease_info(disease['id'], disease['name'], 'jiuyi')
     richang = get_disease_info(disease['id'], disease['name'], 'richang')
     yufang = get_disease_info(disease['id'], disease['name'], 'yufang')
