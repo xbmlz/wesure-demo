@@ -1,7 +1,6 @@
 import re
 
-from fastapi import APIRouter, Request
-from fastapi.templating import Jinja2Templates
+from fastapi import APIRouter
 from pydantic import BaseModel
 import requests
 from app.api.deps import api_result

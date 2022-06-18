@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fastapi-starter</title>
+    <link
+      href="{{ url_for('static', path='/layui/css/layui.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="layui-container">
+      <button type="button" class="layui-btn" onclick="location.href='/ocr'">
+        通用OCR识别
+      </button>
+      <button type="button" class="layui-btn" onclick="location.href='/report'">
+        检验报告单识别
+      </button>
+      <button type="button" class="layui-btn" onclick="location.href='/yd'">
+        腾讯医典
+      </button>
+    </div>
+  </body>
+</html>

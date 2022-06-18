@@ -1,10 +1,8 @@
 import json
-import time
-from fastapi import APIRouter, Request
-from fastapi.templating import Jinja2Templates
-import requests
 
+import requests
 from app.api.deps import api_result
+from fastapi import APIRouter
 
 router = APIRouter()
 

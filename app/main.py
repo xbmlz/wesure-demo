@@ -26,6 +26,11 @@ app.add_middleware(
 app.include_router(api_router, prefix=settings.API_V1_STR)
 
 
+@app.get("/", response_class=HTTPResponse)
+async def report(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
+
+
 @app.get("/report", response_class=HTTPResponse)
 async def report(request: Request):
     return templates.TemplateResponse("report.html", {"request": request})
